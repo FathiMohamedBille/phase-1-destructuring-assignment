@@ -1,29 +1,41 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moo,neigh,baa,oink,cluck]=farmAnimals.split (' ');
+const animalNames =['cow','sheep','pig','chicken']
+const [bessie,dolly,babe,little]=animalNames
+const animalColors ={
+  blackAndWhite: "cow",
+  black:"sheep",
+  pink:"pig"
+};
+const{
+  blackAndWhite, black,pink
+}=animalColors;
+const rainbowColors =["red","orange","yellow","green","blue","indigo","violet"];
+const[red, orange, yellow, green, blue, indigo,violet]=rainbowColors;
+const [r, o, y, g, b, , v]=rainbowColors;
+const [ , , , , , indg]=rainbowColors;
+const muppet = { 
+name: "Miss Piggy", 
+color: "pink",
+ song: "Never Before, Never Again", 
+ job: "Cast member of The Muppet Show", 
+ partner: "Kermit", 
+ songs: [ "The Rainbow Connection", "Moving Right Along", "Bein' Green", "I Hope That Something Better Comes Along" ],
+ nested: {
+ kermit: {
+ job: "Host of The Muppet Show",
+ partner: "Miss Piggy"
+ }
+ }
+ }; 
+const { name: muppetName, color, song, job, partner } = muppet;
+const { songs: [, song2, , song4], nested: { kermit: { job: nestedJob,
+   partner: nestedPartner } } } = muppet;
+
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-const muppet = {
-  muppetName: 'Miss Piggy',
-  color: 'pink',
-  song: 'Never Before, Never Again',
-  job: 'Cast member of The Muppet Show',
-  partner: 'Kermit'
-};
 
-const nestedMuppet = {
-  nestedName: 'Kermit',
-  nestedColor: 'green',
-  album: {
-    theMuppetMovie: {
-      song1: 'Rainbow Connection',
-      song2: 'Moving Right Along',
-      song3: 'Never Before, Never Again',
-      song4: 'I Hope That Something Better Comes Along',
-    },
-  },
-  nestedJob: 'Host of The Muppet Show',
-  nestedPartner: 'Miss Piggy'
-};
 
 // Strings
 
